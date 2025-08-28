@@ -1,0 +1,19 @@
+{
+  "name": "phishingguard-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run -ws build",
+    "clean": "npm run -ws clean || true",
+
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:dashboard\" \"npm run dev:extension\"",
+    "dev:backend": "npm --workspace packages/backend run dev",
+    "dev:dashboard": "npm --workspace packages/dashboard run dev",
+    "dev:extension": "npm --workspace packages/extension run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}

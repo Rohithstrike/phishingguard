@@ -1,0 +1,3 @@
+PhishingGuard is a security-focused project designed to help users detect, analyze, and prevent phishing attacks in real time. It combines a browser extension for live phishing detection, a backend API for threat analysis and data enrichment, and a dashboard UI for monitoring and management.
+
+Built as a monorepo, PhishingGuard ensures a seamless developer experience by keeping all core components — backend, dashboard, and extension — in one place with shared configurations. The goal is to provide a lightweight, scalable, and developer-friendly security tool that empowers individuals and organizations to stay safe against phishing threats.
